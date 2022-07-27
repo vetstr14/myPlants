@@ -2,6 +2,93 @@
     Main styling for myPlants application
 */
 
-img {
-    width: 300px;
+* {
+    box-sizing: border-box;
+    font-family: "Roboto Mono",monospace;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header */
+
+header {
+    width: 100%;
+}
+
+header h1 {
+    font-size: xx-large;
+    text-align: center;
+    padding: 0.2rem;
+}
+
+header div.head-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    padding: 1rem;
+}
+
+header div.head-container div {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+/* Main */
+
+main div.plant_container {
+    display: grid;
+    grid-auto-flow: column;
+    margin: 1rem 1rem;
+    position: relative;
+}
+
+main div.plant_container div.plant_box {
+    width: 200px;
+    height: 250px;
+    margin: 0 1rem;
+    box-shadow: 2px 2px 10px rgba(192, 192, 192, 0.74);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+main div.plant_container div.plant_box div {
+    margin: 0;
+}
+
+main div.plant_container div.plant_box img {
+    width: 100%;
+}
+
+main div.plant_container div.plant_box h2 {
+    margin: 1.5rem 0.5rem 0.5rem 0.5rem;
+}
+main div.plant_container div.plant_box p {
+    font-size: 11px;
+    margin: 0.5rem 0.6rem;
+}
+
+main div.plant_container div.scroll_btn {
+    position: absolute ;
+    top: 0;
+    width: 75px;
+    height: 250px;
+    background-color: 0;
+    cursor: pointer;
+    transition: all 90ms;
+}
+main div.plant_container div.scroll_btn:hover {
+    background-color: rgba(0, 0, 0, 0.26);
+}
+
+main div.plant_container div.scrl_left {
+    left: -1rem;
+}
+main div.plant_container div.scrl_right {
+    right: -1rem;
 }
