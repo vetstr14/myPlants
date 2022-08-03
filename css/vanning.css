@@ -1,0 +1,75 @@
+
+div.vanning {
+    display: flex;
+    flex-wrap: nowrap;
+    height: calc(100vh - 50px);
+    overflow: hidden;
+}
+
+/* Tilbake vanning */
+
+div.tilbake {
+    height: 50px;
+}
+
+div.tilbake input {
+    background-color: white;
+    border: none;
+    font-size: large;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+/* Header vanning */
+
+header.vanning {
+    width: 50%;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+}
+
+header.vanning img {
+    width: 100%;
+    position: absolute;         /* <-- Fiks scalering */
+    top: -20%;
+}
+
+header.vanning h1 {
+    position: absolute;
+    bottom: 2rem;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+}
+
+
+/* Main Vanning */
+
+main.vanning {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main.vanning form.vanning_btn_container input {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    font-size: 23px;
+    background-color: rgba(0, 202, 0, 0.781);
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(153, 153, 153, 0.74);
+    transition: 0.2s;
+}
+main.vanning form.vanning_btn_container input:hover {
+    background-color: rgba(0, 180, 0, 0.781);
+    box-shadow: 2px 2px 15px rgba(104, 104, 104, 0.74);
+}

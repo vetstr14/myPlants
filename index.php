@@ -9,7 +9,7 @@
     <title>My Plants</title>
 </head>
 <body>
-    <header>
+    <header class="main">
         <h1>myPlants</h1>
         <div class="head-container">
             <div>Home</div>
@@ -40,7 +40,7 @@
 
     <!-- Web site  -->
 
-    <main>
+    <main class="main">
         <div class="plant_container">
         <?php 
         $sql = 'SELECT * FROM plant';
@@ -49,19 +49,23 @@
         
         while ($rad) {
             // Get values
+            $id = $rad['ID'];
             $name = $rad['name'];
             $image = $rad['picture'];
 
             // Create plant boxes
-            echo "  <div class='plant_box'>
-                        <div>
-                            <img src='images/$image.jpg' alt='$name'>
-                        </div>
-                        <div>
-                            <h2>$name</h2>
-                            <p>Vanning: 07/08/22</p>
-                        </div>
-                    </div>";
+            echo "  <form action='/myPlants/vanning'>
+                        <input type='hidden' name='id' value='$id'>
+                        <button class='plant_box' type='submit'>
+                            <div class='image_container'>
+                                <img src='images/$image.jpg' alt='$name'>
+                            </div>
+                            <div class='image_text'>
+                                <h2>$name</h2>
+                                <p>Vanning: 07/08/22</p>
+                            </div>
+                        </button>
+                    </form>";
             
             // Update $rad
             $rad = mysqli_fetch_assoc($result);

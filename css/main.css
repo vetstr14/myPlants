@@ -24,7 +24,7 @@ header h1 {
     padding: 0.2rem;
 }
 
-header div.head-container {
+header.main div.head-container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -33,62 +33,68 @@ header div.head-container {
     padding: 1rem;
 }
 
-header div.head-container div {
+header.main div.head-container div {
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
 
-/* Main */
+/* Main Home*/
 
-main div.plant_container {
-    display: grid;
-    grid-auto-flow: column;
+main.main div.plant_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 1rem 1rem;
-    position: relative;
 }
 
-main div.plant_container div.plant_box {
+main.main div.plant_container button.plant_box {
     width: 200px;
     height: 250px;
-    margin: 0 1rem;
+    margin: 1.5rem 1rem;
     box-shadow: 2px 2px 10px rgba(192, 192, 192, 0.74);
     border-radius: 1rem;
     overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+}
+main.main div.plant_container button.plant_box:hover {
+    box-shadow: 2px 2px 15px rgba(133, 133, 133, 0.74);
+}
+main.main div.plant_container button.plant_box:checked {
+    box-shadow: 0;
 }
 
-main div.plant_container div.plant_box div {
+main.main div.plant_container button.plant_box div {
     margin: 0;
 }
 
-main div.plant_container div.plant_box img {
-    width: 100%;
+main.main div.plant_container button.plant_box div.image_container_home {
+    z-index: -1;
 }
 
-main div.plant_container div.plant_box h2 {
-    margin: 1.5rem 0.5rem 0.5rem 0.5rem;
+main.main div.plant_container button.plant_box div.image_text {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    z-index: 2;
 }
-main div.plant_container div.plant_box p {
+
+main.main div.plant_container button.plant_box img {
+    width: 100%;
+    z-index: -1;
+}
+
+main.main div.plant_container button.plant_box h2 {
+    margin: 1.5rem 0.5rem 0.5rem 0.5rem;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+}
+main.main div.plant_container button.plant_box p {
     font-size: 11px;
     margin: 0.5rem 0.6rem;
-}
-
-main div.plant_container div.scroll_btn {
-    position: absolute ;
-    top: 0;
-    width: 75px;
-    height: 250px;
-    background-color: 0;
-    cursor: pointer;
-    transition: all 90ms;
-}
-main div.plant_container div.scroll_btn:hover {
-    background-color: rgba(0, 0, 0, 0.26);
-}
-
-main div.plant_container div.scrl_left {
-    left: -1rem;
-}
-main div.plant_container div.scrl_right {
-    right: -1rem;
+    color: white;
+    text-shadow: 2px 2px 10px black;
 }
