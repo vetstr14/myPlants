@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="no"><head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <link rel="stylesheet" href="../css/vanning.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/phone.css"> -->
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Vanning</title>
+</head>
+<body>
+
+    <!-- Tilbake knapp -->
+
+    <div class="tilbake">
+        <form action="/myPlants">
+            <button>
+                <span style="padding-right: 0.3rem;" class="material-symbols-outlined">
+                    arrow_back
+                </span>
+                Tilbake
+            </button>
+        </form>
+    </div>
+
+    <!-- Web site  -->
+
+    <div class="vanning">
+        
+        <header class="vanning">
+            <div class="image_frame_vanning">
+                <img src="../images/IMG_20220721_134040.jpg" alt="Strilitzia">
+                <h1>Strilitzia</h1>
+                <p><span style="font-size: medium;" class="material-symbols-outlined">
+                    potted_plant
+                    </span> 10cm</p>
+                <p><span style="font-size: medium;" class="material-symbols-outlined">
+                    water_drop
+                    </span> 2022-08-11</p>
+            </div>
+        </header>
+
+        <main class="vanning">
+            <div class="vanning_devider vanning_btn_container">
+                <form class="vanning_btn_container" action="irrigation_action.php">
+                    <input type="hidden" name="vanning" value="true">
+                    <input type="hidden" name="planteID" value="2"><input type="submit" value="Vann Planten">                <!-- Vann planten / Planten er vannet -->
+                </form>
+            </div>
+            <div class="vanning_devider vanning_notater">
+                <h1>Notater</h1>
+                <ul>
+                    <p>Ingen notater</p>
+                    <li>
+                        <p>Ingen notater</p>
+                    </li>
+                    <li>
+                        <div class="list_elm_container success">
+                            <p>2022-08-11</p>
+                            <p>Text som blir lastet fra database</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list_elm_container warning">
+                            <p>2022-08-11</p>
+                            <p>Text som blir lastet fra database</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list_elm_container danger">
+                            <p>2022-08-11</p>
+                            <p>Text som blir lastet fra database. jifjewjfioj efjoijfi foij oijef o o o iejofjeif oi eiojfiej oifej ijf eoi foiej</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list_elm_container success">
+                            <p>2022-08-11</p>
+                            <p>Text som blir lastet fra database</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list_elm_container warning">
+                            <p>2022-08-11</p>
+                            <p>Text som blir lastet fra database</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list_elm_container success">
+                            <p>2022-08-11</p>
+                            <p>Text som blir lastet fra database</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list_elm_container danger">
+                            <p>2022-08-11</p>
+                            <p>Text som blir lastet fra database. jifjewjfioj efjoijfi foij oijef o o o iejofjeif oi eiojfiej oifej ijf eoi foiej</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list_elm_container warning">
+                            <p>2022-08-11</p>
+                            <p>Text som blir lastet fra database</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
+    <script src="" async="" defer=""></script>
+
+</body></html>
